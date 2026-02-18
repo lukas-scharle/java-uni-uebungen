@@ -1,0 +1,13 @@
+# Übungsblatt 05 – Erste Java Programme
+
+## Inhalt
+Erstes Java Programm mit main-Methode und Konsolenausgabe.
+
+## Gelernt
+- Aufbau eines Java-Programms
+- main-Methode
+- System.out.println()
+- Projektstruktur in Java
+
+## Ziel der Übung
+Grundlagen verstehen und erste Programme selbst schreiben.
