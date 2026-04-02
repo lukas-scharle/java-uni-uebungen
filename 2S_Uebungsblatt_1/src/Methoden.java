@@ -62,8 +62,8 @@ public class Methoden {
     // Zu Aufgabe 4
 
     public static boolean ermittelEinheit(String prompt) {
+        System.out.println(prompt);
         while (true) {
-            System.out.println(prompt);
             String eingabe = SCANNER.nextLine();
             String cleanEingabe = eingabe
                     .toLowerCase()
@@ -74,11 +74,12 @@ public class Methoden {
             if (cleanEingabe.equals("fahrenheit")) {
                 return false;
             }
-            System.out.println("Bitte eine gültige Einheit eingeben (Fahrenheit oder Grad: ");
+            System.out.println("Bitte eine gültige Einheit eingeben (Fahrenheit / Grad): ");
         }
     }
 
     public static double ermittelWert (String prompt) {
+        System.out.println(prompt);
         double d = SCANNER.nextDouble();
         return d;
     }
