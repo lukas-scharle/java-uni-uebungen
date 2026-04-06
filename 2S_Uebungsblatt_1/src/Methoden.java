@@ -1,4 +1,3 @@
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Methoden {
@@ -31,7 +30,7 @@ public class Methoden {
 
     // Zu Aufgabe 2
 
-    public static void berechneAufgabe2(int a, int b) {
+    public static void berechneErgebnisse(int a, int b) {
         System.out.println("Summe = " + (a + b));
         System.out.println("Differenz = " + (a - b));
         System.out.println("Produkt = " + (a * b));
@@ -78,7 +77,7 @@ public class Methoden {
         }
     }
 
-    public static double ermittelWert (String prompt) {
+    public static double ermittelWert(String prompt) {
         System.out.println(prompt);
         double d = SCANNER.nextDouble();
         return d;
@@ -86,11 +85,27 @@ public class Methoden {
 
     public static void umwandelTemp(boolean b, double d) {
         if (b) {
-            System.out.println("Die eingegebenen " + d + " Grad entsprechen " + (d * (9/5) + 32) + " Fahrenheit");
+            System.out.println("Die eingegebenen " + d + " Grad entsprechen " + (d * (9 / 5) + 32) + " Fahrenheit");
         } else {
-            System.out.println("Die eingegebenen " + d + " Fahrenheit entsprechen " + (((5*d)-32)/9) + " Grad");
+            System.out.println("Die eingegebenen " + d + " Fahrenheit entsprechen " + (((5 * d) - 32) / 9) + " Grad");
         }
     }
+
+    //Zu Aufgabe 5
+    public static void kleinsteZahl(int a, int b, int c) {
+        if (a < b) {
+            if (a < c) {
+                System.out.println("Die kleinste Zahl ist " + a);
+            } else {
+                System.out.println("Die kleinste Zahl ist " + c);
+            }
+        } else if (b < c) {
+            System.out.println("Die kleinste Zahl ist " + b);
+        } else {
+            System.out.println("Die kleinste Zahl ist " + c);
+        }
+    }
+
 
 }
 
