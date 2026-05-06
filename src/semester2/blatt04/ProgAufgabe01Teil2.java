@@ -25,7 +25,7 @@ public class ProgAufgabe01Teil2 {
         if (a == null) {
             return null;
         }
-        int[] odd = B04ProgAufgabe01_1.toOdd(a);
+        int[] odd = ProgAufgabe01Teil1.toOdd(a);
         int[] even = toEven(a);
 
         return new ArrayRecord( odd, even);
