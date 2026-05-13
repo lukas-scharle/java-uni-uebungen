@@ -1,6 +1,16 @@
 package semester1.blatt08;
 
+/**
+ * Kapselt die Regeln zur Schaltjahrberechnung. Die Methode zeigt verschachtelte
+ * Bedingungen und die Reihenfolge wichtiger Sonderfaelle.
+ */
 public class Schaltjahr {
+    /**
+     * Prueft, ob ein Jahr nach den verwendeten Regeln ein Schaltjahr ist.
+     *
+     * @param jahr zu pruefendes Jahr
+     * @return true, wenn das Jahr ein Schaltjahr ist
+     */
     public static boolean schaltjahr(int jahr) {
         if (jahr < -45) {
             return false;

@@ -2,7 +2,14 @@ package semester2.blatt03;
 
 import Util.ReadUtil;
 
+/**
+ * Wertet ein Polynom dritten Grades fuer x-Werte von -5.0 bis 5.0 aus. Die
+ * Aufgabe nutzt eine eigene Eingabe-Hilfsklasse und formatierte Tabellen.
+ */
 public class ProgAufgabe02 {
+    /**
+     * Liest die Koeffizienten a bis d ein und gibt eine Wertetabelle aus.
+     */
     static void main() {
         double a = ReadUtil.nextDouble("Bitte a eingeben: ");
         double b = ReadUtil.nextDouble("Bitte b eingeben: ");

@@ -2,7 +2,14 @@ package semester1.blatt07;
 
 import java.util.Scanner;
 
+/**
+ * Sucht einen Namen in einem String-Array. Die Aufgabe zeigt String-Vergleiche,
+ * case-insensitive Suche und das gezielte Beenden einer Schleife mit break.
+ */
 public class Aufgabe05 {
+    /**
+     * Liest den Suchbegriff ein und prueft ihn gegen alle bekannten Namen.
+     */
     static void main() {
         Scanner sc = new Scanner(System.in);
 

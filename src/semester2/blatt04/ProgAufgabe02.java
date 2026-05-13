@@ -1,8 +1,17 @@
 package semester2.blatt04;
 
+/**
+ * Verschmilzt drei Arrays abwechselnd zu einem neuen Array. Die Aufgabe zeigt
+ * paralleles Iterieren ueber unterschiedlich lange Arrays und Indexverwaltung.
+ */
 public class ProgAufgabe02 {
 
 
+    /**
+     * Fuegt die Arrays in der Reihenfolge a1[i], a2[i], a3[i] zusammen.
+     *
+     * @return neues Array mit allen Elementen oder null bei null-Parametern
+     */
     public static int[] merge(int[] a1, int[] a2, int[] a3) {
         if (a1 == null || a2 == null || a3 == null) {
             return null;

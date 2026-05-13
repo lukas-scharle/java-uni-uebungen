@@ -2,7 +2,15 @@ package semester1.blatt06;
 
 import java.util.Scanner;
 
+/**
+ * Sammlung kleiner Schleifenuebungen. Enthalten sind for-, while- und
+ * do-while-Schleifen sowie Zufallszahlen und eine Abbruchbedingung per Eingabe.
+ */
 public class Aufgabe01 {
+    /**
+     * Fuehrt die Teilaufgaben nacheinander aus und zeigt unterschiedliche
+     * Schleifenarten im direkten Vergleich.
+     */
     static void main() {
         Scanner sc = new Scanner(System.in);
 

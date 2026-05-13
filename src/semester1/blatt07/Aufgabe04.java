@@ -1,6 +1,14 @@
 package semester1.blatt07;
 
+/**
+ * Sucht in einem Zahlenarray nach Minimum und Maximum. Die Aufgabe trainiert
+ * lineares Durchlaufen eines Arrays und Aktualisieren von Vergleichswerten.
+ */
 public class Aufgabe04 {
+    /**
+     * Initialisiert Vergleichswerte mit dem ersten Arrayelement und prueft dann
+     * die uebrigen Werte.
+     */
     static void main() {
         // AUFGABE 4
         int[] maxMin = {123, 3123, 23, 1, 56, 456, 2, 456};

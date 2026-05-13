@@ -1,22 +1,35 @@
 package semester1.blatt08;
 
+/**
+ * Statische Hilfsklasse fuer einfache Rechenoperationen. Die Klasse zeigt
+ * Methodenzerlegung, Rueckgabewerte und eine Schutzabfrage gegen Division durch
+ * null.
+ */
 public class Taschenrechner {
-    // Addition von zwei Zahlen
+    /**
+     * Addiert zwei Zahlen.
+     */
     public static double addiere(double a, double b) {
         return a + b;
     }
 
-    // Subtraktion von zwei Zahlen
+    /**
+     * Subtrahiert die zweite Zahl von der ersten.
+     */
     public static double subtrahiere(double a, double b) {
         return a - b;
     }
 
-    // Multiplikation von zwei Zahlen
+    /**
+     * Multipliziert zwei Zahlen.
+     */
     public static double multipliziere(double a, double b) {
         return a * b;
     }
 
-    // Division von zwei Zahlen
+    /**
+     * Dividiert zwei Zahlen und gibt bei Division durch null NaN zurueck.
+     */
     public static double teile(double a, double b) {
         if (istNull(b)) {
             System.out.println("Division durch 0 ist nicht erlaubt.");
@@ -28,7 +41,10 @@ public class Taschenrechner {
 
     }
 
-    // Auf Division durch null prüfen
+    // Auf Division durch null pruefen
+    /**
+     * Prueft, ob ein Wert genau 0 ist.
+     */
     public static boolean istNull(double x){
         if (x == 0){
             return true;
@@ -37,7 +53,9 @@ public class Taschenrechner {
         }
     }
 
-    // semester1.blatt08.Taschenrechner
+    /**
+     * Fuehrt alle vier Grundrechenarten aus und gibt die Ergebnisse aus.
+     */
     public static void taschenrechner(int a, int b) {
         System.out.println("Die Summe lautet: " + (addiere(a, b)));
         System.out.println("Die Differenz lautet: " + (subtrahiere(a, b)));

@@ -2,7 +2,15 @@ package semester1.blatt05;
 
 import java.util.Scanner;
 
+/**
+ * Berechnet mit dem Satz des Pythagoras die Hypotenuse eines rechtwinkligen
+ * Dreiecks. Die Aufgabe zeigt Konsoleneingaben, mathematische Funktionen aus
+ * {@link Math} und formatierte Ausgabe mit zwei Nachkommastellen.
+ */
 public class Aufgabe03 {
+    /**
+     * Liest die beiden Kathetenlaengen ein und gibt die berechnete Seite c aus.
+     */
     static void main() {
             Scanner sc = new Scanner(System.in);
 

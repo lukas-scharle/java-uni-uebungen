@@ -2,8 +2,15 @@ package semester2.blatt03;
 
 import java.util.Random;
 
+/**
+ * Simuliert viele Wuerfelwuerfe und zaehlt die Haeufigkeiten der Augenzahlen.
+ * Die Aufgabe zeigt Arrays, Zufallszahlen und statistische Auswertung.
+ */
 public class Aufgabe04 {
 
+    /**
+     * Zaehlt, wie oft die Zahlen 1 bis 6 im uebergebenen Array vorkommen.
+     */
     public static void zählen(int[] a) {
         int einser = 0;
         int zweier = 0;
@@ -34,6 +41,9 @@ public class Aufgabe04 {
         System.out.println("Es gibt " + sechser + " Sechsen.");
     }
 
+    /**
+     * Erzeugt 10.000 Zufallswuerfe und wertet sie aus.
+     */
     static void main() {
         Random random = new Random();
         int[] zufall = new int[10000];

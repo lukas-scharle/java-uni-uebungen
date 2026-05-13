@@ -2,11 +2,23 @@ package semester2.blatt01;
 
 import java.util.Scanner;
 
+/**
+ * Zentrale Hilfsklasse fuer mehrere Aufgaben des ersten Blatts im zweiten
+ * Semester. Sie buendelt robuste Konsoleneingabe, Rechenoperationen,
+ * Quadratpruefung, Temperaturumrechnung und Zahlenvergleiche.
+ */
 public class Methoden {
 
 
     private static final Scanner SCANNER = new Scanner(System.in);
 
+    /**
+     * Liest eine ganze Zahl robust ein und wiederholt die Abfrage bei
+     * ungueltiger Eingabe.
+     *
+     * @param prompt Text, der vor der Eingabe angezeigt wird
+     * @return gueltige Ganzzahl aus der Konsole
+     */
     public static int readInt(String prompt) {
         while (true) {
             System.out.print(prompt);
@@ -22,7 +34,9 @@ public class Methoden {
         }
     }
 
-    // Zu Aufgabe 1
+    /**
+     * Gibt mehrere einfache ASCII-Figuren aus.
+     */
     public static void druckeFiguren() {
         System.out.println("**********       *    *******");
         System.out.println("*        *      ***    *****");
@@ -30,8 +44,10 @@ public class Methoden {
         System.out.println("**********    *******    *");
     }
 
-    // Zu Aufgabe 2
-
+    /**
+     * Berechnet Grundrechenarten fuer zwei ganze Zahlen und behandelt Division
+     * durch null separat.
+     */
     public static void berechneErgebnisse(int a, int b) {
         System.out.println("Summe = " + (a + b));
         System.out.println("Differenz = " + (a - b));
@@ -47,8 +63,9 @@ public class Methoden {
         }
     }
 
-    // Zu Aufgabe 3
-
+    /**
+     * Prueft, ob eine der Zahlen die Quadratwurzel der jeweils anderen ist.
+     */
     public static void pruefeQuadrat(int a, int b) {
         if (a * a == b) {
             System.out.println(a + " ist die Wurzel aus " + b);
@@ -60,8 +77,11 @@ public class Methoden {
         }
     }
 
-    // Zu Aufgabe 4
-
+    /**
+     * Liest eine Temperatureinheit ein und normalisiert die Benutzereingabe.
+     *
+     * @return true fuer Grad Celsius, false fuer Fahrenheit
+     */
     public static boolean ermittelEinheit(String prompt) {
         System.out.println(prompt);
         while (true) {
@@ -77,12 +97,21 @@ public class Methoden {
         }
     }
 
+    /**
+     * Liest einen double-Wert fuer die Temperaturumrechnung ein.
+     */
     public static double ermittelWert(String prompt) {
         System.out.println(prompt);
         double d = SCANNER.nextDouble();
         return d;
     }
 
+    /**
+     * Rechnet Celsius in Fahrenheit oder Fahrenheit in Celsius um.
+     *
+     * @param b true, wenn der eingegebene Wert Grad Celsius ist
+     * @param d Temperaturwert
+     */
     public static void umwandelTemp(boolean b, double d) {
         if (b) {
             System.out.println("Die eingegebenen " + d + " Grad entsprechen " + (d * (9 / 5) + 32) + " Fahrenheit");
@@ -91,7 +120,9 @@ public class Methoden {
         }
     }
 
-    //Zu Aufgabe 5
+    /**
+     * Gibt die kleinste von drei Zahlen aus.
+     */
     public static void kleinsteZahl(int a, int b, int c) {
         if (a < b) {
             if (a < c) {

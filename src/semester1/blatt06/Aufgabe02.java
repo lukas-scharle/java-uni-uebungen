@@ -3,7 +3,15 @@ package semester1.blatt06;//TIP To <b>Run</b> code, press <shortcut actionId="Ru
 
 import java.util.Scanner;
 
+/**
+ * Uebungen zu Summenbildung, Teilbarkeit, Quadratzahlen und ersten
+ * Kontrollstrukturen. Die Klasse zeigt, wie Eingaben mit Schleifen und
+ * Bedingungen ausgewertet werden.
+ */
 public class Aufgabe02 {
+    /**
+     * Bearbeitet mehrere Teilaufgaben mit unterschiedlichen Schleifenmustern.
+     */
     static void main() {
         Scanner sc = new Scanner(System.in);
 

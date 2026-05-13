@@ -1,5 +1,10 @@
 package semester1.blatt10;
 
+/**
+ * Einfache Personenklasse zur Einfuehrung in objektorientierte Programmierung.
+ * Sie zeigt Attribute, Zugriffsmethoden, Konstruktoren und eine Methode, die
+ * den Zustand eines Objekts veraendert.
+ */
 public class Person {
     // ATTRIBUTE
     // name
@@ -51,7 +56,9 @@ public class Person {
 
     //-------------------------------------------------
     // KONSTRUKTOREN
-
+    /**
+     * Erstellt eine Person mit vollstaendig uebergebenen Daten.
+     */
     public Person(String name, int alter, char geschlecht, String textbfAdresse) {
         this.name = name;
         this.alter = alter;
@@ -59,6 +66,9 @@ public class Person {
         this.textbfAdresse = textbfAdresse;
     }
 
+    /**
+     * Erstellt eine Person mit neutralen Standardwerten.
+     */
     public Person() {
         this.name = "Unbekannt";
         this.alter = 0;
@@ -67,13 +77,17 @@ public class Person {
     }
 
     //--------------------------------------------------
-    // GEBURTSTAG
+    /**
+     * Erhoeht das Alter um ein Jahr und demonstriert Zustandsaenderung.
+     */
     public void geburtstag() {
         int neuesAlter = this.getAlter() + 1;
         this.setAlter(neuesAlter);
     }
 
-    // toString()
+    /**
+     * Gibt die Personendaten strukturiert auf der Konsole aus.
+     */
     public void toStringPerson(){
         System.out.println("Daten zur semester1.blatt10.Person:");
         System.out.println("Name: " + this.getName());

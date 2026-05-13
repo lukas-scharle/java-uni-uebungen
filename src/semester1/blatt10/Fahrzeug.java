@@ -1,5 +1,10 @@
 package semester1.blatt10;
 
+/**
+ * Modelliert ein Fahrzeug mit typischen Eigenschaften wie Hersteller, Modell,
+ * Baujahr und Kraftstoffart. Die Klasse zeigt Kapselung durch private Attribute,
+ * Getter/Setter, Konstruktoren, Enums und eine ueberschriebene toString-Methode.
+ */
 public class Fahrzeug {
     // Attribut - Hersteller
     private String hersteller;
@@ -53,6 +58,7 @@ public class Fahrzeug {
         return fahrgestellnummer;
     }
 
+    // Gemeinsamer Zaehler, um jedem Fahrzeug eine eindeutige Nummer zu geben.
     private static int counter = 0;
 
 
@@ -80,6 +86,9 @@ public class Fahrzeug {
 
     //----------------------------------------------------------
     // Konstruktoren
+    /**
+     * Erstellt ein Fahrzeug mit Standardwerten.
+     */
     public Fahrzeug() {
         this.hersteller = "Unbekannt";
         this.modell = "Unbekannt";
@@ -90,6 +99,9 @@ public class Fahrzeug {
         this.kraftstoffart = Typen.Kraftstoffart.BENZIN;
     }
 
+    /**
+     * Erstellt ein Fahrzeug mit allen relevanten Eigenschaften.
+     */
     public Fahrzeug(String hersteller, String modell, int baujahr, String farbe, Typen.Fahrzeugtyp fahrzeugtyp, Typen.Kraftstoffart kraftstoffart) {
         this.hersteller = hersteller;
         this.modell = modell;
@@ -101,7 +113,9 @@ public class Fahrzeug {
     }
 
     //------------------------------------------------------------
-    // to String Methode
+    /**
+     * Formatiert alle Fahrzeugdaten als mehrzeiligen Text.
+     */
     @Override
     public String toString() {
         return """

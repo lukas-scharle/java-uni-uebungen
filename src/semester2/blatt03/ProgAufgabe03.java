@@ -1,7 +1,15 @@
 package semester2.blatt03;
 
+/**
+ * Erstellt und gibt ein magisches Quadrat aus. Die Aufgabe zeigt den Umgang mit
+ * zweidimensionalen Arrays, Positionsberechnung und zyklische Indizes per
+ * Modulo.
+ */
 public class ProgAufgabe03 {
 
+    /**
+     * Berechnet ein magisches Quadrat fuer eine ungerade Kantenlaenge.
+     */
     public static int[][] magischesQuadrat(int kantenlänge) {
         int[][] quadrat = new int[kantenlänge][kantenlänge];
         int posX = kantenlänge / 2 + 1;
@@ -34,6 +42,9 @@ public class ProgAufgabe03 {
         return quadrat;
     }
 
+    /**
+     * Gibt ein zweidimensionales Array als ausgerichtete Matrix aus.
+     */
     public static void ausgeben(int[][] quadrat) {
         for (int i = 0; i < quadrat.length; i++) {
             for (int j = 0; j < quadrat[i].length; j++) {
@@ -44,6 +55,9 @@ public class ProgAufgabe03 {
     }
 
 
+    /**
+     * Erstellt ein Beispielquadrat der Groesse 7 und gibt es aus.
+     */
     static void main() {
         ausgeben(magischesQuadrat(7));
     }

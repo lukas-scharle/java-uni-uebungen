@@ -4,7 +4,14 @@ import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.Scanner;
 
+/**
+ * Wiederverwendbare Eingabe-Hilfsklasse fuer Konsolenprogramme. Die Methoden
+ * lesen verschiedene Datentypen ein, validieren fehlerhafte Eingaben und fragen
+ * so lange erneut nach, bis ein passender Wert eingegeben wurde.
+ */
 public class ReadUtil {
+    // Ein gemeinsamer Scanner verhindert, dass mehrere Scanner auf System.in
+    // gegeneinander arbeiten.
     static Scanner sIn = new Scanner(System.in);
 
     /**
