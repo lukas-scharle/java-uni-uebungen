@@ -6,11 +6,12 @@ Dieses Repository enthält meine Java-Übungsaufgaben aus der Uni.
 
 Die Aufgaben sind nach Übungsblättern sortiert:
 
-- Uebungsblatt_5
-- Uebungsblatt_6
-- Uebungsblatt_7
-- Uebungsblatt_8
-- Uebungsblatt_10
+- Blatt05
+- Blatt06
+- Blatt07
+- Blatt08
+- Blatt10
+- ...
 
 ## Ziel
 
