@@ -23,3 +23,4 @@ Dieses Repository dient dazu, meine Übungsaufgaben zu sammeln, sauber zu strukt
 - IntelliJ IDEA
 - Git
 - GitHub
+- ChatGpt
