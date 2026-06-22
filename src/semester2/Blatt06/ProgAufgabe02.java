@@ -1,5 +1,6 @@
 package semester2.Blatt06;
 
+
 public class ProgAufgabe02 {
     public static class Buch {
         private String autor;
